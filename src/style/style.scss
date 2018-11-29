@@ -114,3 +114,77 @@ footer {
         }
     }
 }
+
+.header {
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    width: 100%;
+    height: pxTorem(90px);
+    @include box_flex;
+    @include direction(column);
+    dd {
+        color: #555;
+    }
+    .title {
+        width: 100%;
+        height: pxTorem(50px);
+        font-size: pxTorem(16px);
+        @include box_flex;
+        @include justify(space-between);
+        @include align(center);
+        p {
+            border-radius: pxTorem(15px);
+            border: 1px solid #ccc;
+            padding: pxTorem(5px) pxTorem(11px);
+            @include box_flex;
+            @include justify(space-around);
+            @include align(center);
+            a {
+                font-size: pxTorem(14px);
+                color: #000;
+                padding: 0 pxTorem(5px);
+            }
+            .o {
+                border-right: 1px solid #ccc;
+            }
+        }
+    }
+    .head {
+        width: 100%;
+        height: pxTorem(35px);
+        background: #F0F1F2;
+        border-radius: pxTorem(7px);
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        @include box_flex;
+        @include align(center);
+        color: #333;
+        .iconfont {
+            font-size: pxTorem(14px);
+            color: #333;
+            padding: 0 pxTorem(3px);
+        }
+    }
+}
+
+.footer {
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    width: 100%;
+    height: pxTorem(45px);
+    @include box_flex;
+    @include justify(space-around);
+    background: #FAFAFA;
+    dl {
+        @include box_flex;
+        @include direction(column);
+        @include align(center);
+        @include justify(center);
+        dt {
+            img {
+                width: pxTorem(20px);
+                height: pxTorem(20px);
+            }
+        }
+    }
+}
